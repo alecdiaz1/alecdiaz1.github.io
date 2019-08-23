@@ -1,0 +1,67 @@
+import React from 'react';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import { Link } from 'gatsby';
+
+const NavLink = styled(Link)`
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  /* font-weight: ${props => props.fontWeight || 'normal'}; */
+  line-height: 1;
+  margin: 0 0.5rem 0 0;
+  padding: 0.25rem;
+  text-decoration: none;
+
+  &.current-page {
+    border-bottom: 2px solid #222;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+`;
+
+const Header = () => (
+  <header
+    css={css`
+      background: #1F1F1F;
+      display: flex;
+      justify-content: space-between;
+      /* padding: 1rem calc((100vw - 900px - 0.5rem) / 2); */
+      margin: 2rem auto;
+      max-width: 900px;
+
+      @media only screen and (max-width: 900px) {
+        margin: 2rem 2rem;
+      }
+    
+      @media only screen and (max-width: 430px) {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+      }
+    `}
+  >
+    <NavLink to="/" fontWeight="bold">
+      Alec Diaz
+    </NavLink>
+    <nav
+      css={css`
+        margin-top: 0;
+      `}
+    >
+      <NavLink to="/" activeClassName="current-page">
+        Home
+      </NavLink>
+      <NavLink to="/about/" activeClassName="current-page">
+        About
+      </NavLink>
+      <NavLink to="/contact/" activeClassName="current-page">
+        Contact
+      </NavLink>
+    </nav>
+  </header>
+);
+
+export default Header;
