@@ -25,14 +25,6 @@ const PostPreview = ({ post }) => {
         background-color: red;
       }
 
-      :nth-of-type(2) {
-        background-color: green;
-      }
-
-      :nth-of-type(3) {
-        background-color: orange;
-      }
-
       :hover {
         background-color: gray;
       }

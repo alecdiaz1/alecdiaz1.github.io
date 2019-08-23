@@ -39,6 +39,14 @@ const Layout = ({ children }) => {
             > div {
               margin-top: 0;
             }
+
+            @media only screen and (max-width: 900px) {
+              margin: 0 2rem;
+            }
+
+            @media only screen and (max-width: 600px) {
+              margin: 0 0rem;
+            }
           }
 
           h1,

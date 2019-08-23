@@ -56,14 +56,18 @@ const Header = () => (
         margin: 2rem 2rem;
       }
     
-      @media only screen and (max-width: 430px) {
-        /* flex-direction: column;
+      /* @media only screen and (max-width: 430px) {
+        flex-direction: column;
         align-items: center;
-        margin: 1rem; */
-      }
+        margin: 1rem;
+      } */
     `}
   >
-    <NavLink to="/" fontWeight="bold">
+    <NavLink to="/" fontWeight="bold" css={css`
+      :hover:after {
+        width: 0%;
+      }
+    `}>
       Logo
     </NavLink>
     <nav
