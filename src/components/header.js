@@ -12,13 +12,33 @@ const NavLink = styled(Link)`
   margin: 0 0.5rem 0 0;
   padding: 0.25rem;
   text-decoration: none;
-
-  &.current-page {
-    border-bottom: 2px solid #222;
-  }
+  transition: .2s;
+  position: relative;
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  &.current-page {
+    border-bottom: 2px solid white;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -.1rem auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white;
+    height: 2px;
+    transition: .2s;
+  }
+
+  &:hover:after {
+    width: 100%;
   }
 `;
 
@@ -37,14 +57,14 @@ const Header = () => (
       }
     
       @media only screen and (max-width: 430px) {
-        flex-direction: column;
+        /* flex-direction: column;
         align-items: center;
-        margin: 1rem;
+        margin: 1rem; */
       }
     `}
   >
     <NavLink to="/" fontWeight="bold">
-      Alec Diaz
+      Logo
     </NavLink>
     <nav
       css={css`
@@ -52,7 +72,7 @@ const Header = () => (
       `}
     >
       <NavLink to="/" activeClassName="current-page">
-        Home
+        Work
       </NavLink>
       <NavLink to="/about/" activeClassName="current-page">
         About
