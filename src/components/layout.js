@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
+import Fade from 'react-reveal/Fade';
 import Lato from 'typeface-lato';
 
 const Layout = ({ children }) => {
@@ -77,9 +78,7 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
-      
       <Header />
-
       <main
         css={css`
           display: flex;
@@ -90,10 +89,11 @@ const Layout = ({ children }) => {
           /* max-width: 900px; */
         `}
       >
-        {children}
+        <Fade bottom distance={'3rem'}>
+          {children}
+        </Fade>
       </main>
-
-      <Footer/>
+      <Footer />
     </>
   );
 };

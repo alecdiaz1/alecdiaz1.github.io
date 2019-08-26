@@ -3,6 +3,7 @@ import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
+import Fade from 'react-reveal/Fade';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const PostLayout = ({ children }) => {
@@ -56,6 +57,10 @@ const PostLayout = ({ children }) => {
             margin: 1.5rem 2rem 0 2rem;
           }
 
+          h3 {
+            margin: 1.5rem 2rem 0 2rem;
+          }
+
           h4 {
             font-weight: 300;
             margin: 0 2rem 2rem 2rem;
@@ -63,7 +68,7 @@ const PostLayout = ({ children }) => {
 
           p {
             font-weight: 300;
-            margin: 0.5rem 2rem 3rem 2rem;
+            margin: 0.5rem 2rem 1rem 2rem;
           }
 
           strong {
@@ -75,18 +80,40 @@ const PostLayout = ({ children }) => {
           }
 
           img {
-              height: 2rem;
+            height: 2rem;
           }
+          
+          a {
+            color: white;
+            transition: .2s;
 
+            &:hover {
+              color: pink;
+            }
+          }
+          
           .gallery {
-            height: 10rem;
-            width: 100%;
             display: flex;
+            width: 100%;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+            }
           }
 
-          .gallery img {
-            height: 10rem;
-            width: 10rem;
+          .gatsby-resp-image-wrapper {
+              width: 45%;
+
+              @media only screen and (max-width: 600px) {
+                width: 90%;
+                margin-bottom: 1rem;
+            }
+          }
+
+          .summary {
+              display: flex;
+              justify-content: space-between;
           }
         `}
       />
@@ -96,21 +123,21 @@ const PostLayout = ({ children }) => {
         <meta name="description" content={description} />
       </Helmet>
       <Header />
-
-      <main
-        css={css`
-          display: flex;
-          /* align-items: center; */
-          flex-direction: column;
-          margin: 2rem auto;
-          max-width: 900px;
-          /* max-width: 900px; */
-        `}
-      >
-        {children}
-      </main>
-
-      <Footer />
+      <Fade bottom distance={'3rem'}>
+        <main
+          css={css`
+            display: flex;
+            /* align-items: center; */
+            flex-direction: column;
+            margin: 2rem auto;
+            max-width: 900px;
+            /* max-width: 900px; */
+          `}
+        >
+          {children}
+        </main>
+        <Footer />
+      </Fade>
     </>
   );
 };
