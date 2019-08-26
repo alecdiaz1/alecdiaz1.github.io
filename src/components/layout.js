@@ -6,6 +6,7 @@ import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 import Lato from 'typeface-lato';
 
+
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
