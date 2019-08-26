@@ -6,7 +6,6 @@ import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 import Lato from 'typeface-lato';
 
-
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
@@ -26,7 +25,7 @@ const Layout = ({ children }) => {
 
           html,
           body {
-            background-color: #1F1F1F;
+            background-color: #1f1f1f;
             margin: 0;
             color: white;
             /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -78,6 +77,7 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
+      
       <Header />
 
       <main
