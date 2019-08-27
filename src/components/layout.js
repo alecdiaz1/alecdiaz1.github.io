@@ -82,11 +82,9 @@ const Layout = ({ children }) => {
       <main
         css={css`
           display: flex;
-          /* align-items: center; */
           flex-direction: column;
           margin: 2rem auto;
           max-width: 900px;
-          /* max-width: 900px; */
         `}
       >
         <Fade bottom distance={'3rem'}>

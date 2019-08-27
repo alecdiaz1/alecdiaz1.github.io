@@ -82,38 +82,38 @@ const PostLayout = ({ children }) => {
           img {
             height: 2rem;
           }
-          
+
           a {
             color: white;
-            transition: .2s;
+            transition: 0.2s;
 
             &:hover {
               color: pink;
             }
           }
-          
+
           .gallery {
             display: flex;
             width: 100%;
             margin-bottom: 2rem;
 
             @media only screen and (max-width: 600px) {
-                flex-direction: column;
+              flex-direction: column;
             }
           }
 
           .gatsby-resp-image-wrapper {
-              width: 45%;
+            width: 45%;
 
-              @media only screen and (max-width: 600px) {
-                width: 90%;
-                margin-bottom: 1rem;
+            @media only screen and (max-width: 600px) {
+              width: 90%;
+              margin-bottom: 1rem;
             }
           }
 
           .summary {
-              display: flex;
-              justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
           }
         `}
       />
@@ -127,11 +127,9 @@ const PostLayout = ({ children }) => {
         <main
           css={css`
             display: flex;
-            /* align-items: center; */
             flex-direction: column;
             margin: 2rem auto;
             max-width: 900px;
-            /* max-width: 900px; */
           `}
         >
           {children}

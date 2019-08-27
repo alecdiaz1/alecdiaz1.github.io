@@ -12,7 +12,6 @@ export default () => {
   const ItemContainer = styled('div')`
     display: flex;
     flex-wrap: wrap;
-    /* height: 50rem; */
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;

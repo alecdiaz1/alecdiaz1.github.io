@@ -11,7 +11,7 @@ export const query = graphql`
     mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        author
+        tag
         image {
           sharp: childImageSharp {
             fluid {
