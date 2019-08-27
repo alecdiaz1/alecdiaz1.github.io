@@ -1,7 +1,22 @@
 import React from 'react';
 import PostLayout from '../components/post-layout';
 import ReadLink from '../components/read-link';
+import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 // import Img from 'gatsby-image';
+
+const ListStyle = styled('ul')`
+  position: relative;
+  list-style: none;
+  margin-left: 1.5rem;
+  padding-left: 1.5em;
+
+  li:before {
+    content: '➤';
+    position: absolute;
+    left: 0;
+  }
+`;
 
 const About = () => (
   <PostLayout>
@@ -9,25 +24,27 @@ const About = () => (
     <h4>A little about me -</h4>
     <p>image here</p>
     <p>
-      I'm a student/designer who's fascinated by the intersection of technology
-      and human behavior. With the pervasiveness of technology in all aspects of
-      daily life, I believe that we need to take a closer look at its effects on
-      our lives.
+      I'm a designer fascinated by the intersection of technology and human
+      behavior.
     </p>
     <p>
       Want to chat? You can reach me at{' '}
-      <a class="about-link" href="mailto:alecdiaz1@yahoo.com">alecdiaz1@yahoo.com</a> (I made it
-      before Gmail was a big thing).
+      <a class="about-link" href="mailto:alecdiaz1@yahoo.com">
+        alecdiaz1@yahoo.com
+      </a>
     </p>
     <p>
-      Other than designing things, I spend a lot of my free time dabbling in a
-      lot of hobbies! I'm pretty serious about dancing; I've been doing urban
-      dance since high school and I used to breakdance. When I'm not dancing I'm
-      usually at my computer playing video games like
-      <i>Rocket League</i> and <i>League of Legends</i>, or flying airliners in
-      a flight sim. When I'm not gaming, you can probably catch me binging{' '}
-      <i>The Office</i> for the 20th time. I also like to make{' '}
-      <a class="about-link" href="https://soundcloud.com/thealegator">music</a>.
+      In my free time, I like <br />
+      <ListStyle>
+        <li>making <a class="about-link" href="https://soundcloud.com/thealegator">music</a>
+        </li>
+        <li> dancing</li>
+        <li> playing video games (League of Legends, Rocket League)</li>
+        <li>
+          {' '}
+          watching <i>The Office</i>
+        </li>
+      </ListStyle>
     </p>
     <ReadLink to="/">&larr; back to home</ReadLink>
   </PostLayout>
