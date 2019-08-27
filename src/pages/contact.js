@@ -1,7 +1,7 @@
 import React from 'react';
 import PostLayout from '../components/post-layout';
 import ReadLink from '../components/read-link';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 const Contact = () => (
   <PostLayout>

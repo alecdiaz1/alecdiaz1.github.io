@@ -5,7 +5,7 @@ import Header from './header';
 import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 import Fade from 'react-reveal/Fade';
-import Lato from 'typeface-lato';
+// import Lato from 'typeface-lato';
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();

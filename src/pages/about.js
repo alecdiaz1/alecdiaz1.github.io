@@ -1,7 +1,7 @@
 import React from 'react';
 import PostLayout from '../components/post-layout';
 import ReadLink from '../components/read-link';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 const About = () => (
   <PostLayout>
@@ -16,7 +16,7 @@ const About = () => (
     </p>
     <p>
       Want to chat? You can reach me at{' '}
-      <a href="mailto:alecdiaz1@yahoo.com">alecdiaz1@yahoo.com</a> (I made it
+      <a class="about-link" href="mailto:alecdiaz1@yahoo.com">alecdiaz1@yahoo.com</a> (I made it
       before Gmail was a big thing).
     </p>
     <p>
@@ -27,7 +27,7 @@ const About = () => (
       <i>Rocket League</i> and <i>League of Legends</i>, or flying airliners in
       a flight sim. When I'm not gaming, you can probably catch me binging{' '}
       <i>The Office</i> for the 20th time. I also like to make{' '}
-      <a href="https://soundcloud.com/thealegator">music</a>.
+      <a class="about-link" href="https://soundcloud.com/thealegator">music</a>.
     </p>
     <ReadLink to="/">&larr; back to home</ReadLink>
   </PostLayout>

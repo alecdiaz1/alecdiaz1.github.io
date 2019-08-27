@@ -86,10 +86,6 @@ const PostLayout = ({ children }) => {
           a {
             color: white;
             transition: 0.2s;
-
-            &:hover {
-              color: pink;
-            }
           }
 
           .gallery {
@@ -114,6 +110,10 @@ const PostLayout = ({ children }) => {
           .summary {
             display: flex;
             justify-content: space-between;
+          }
+
+          .about-link:hover {
+            color: pink;
           }
         `}
       />
