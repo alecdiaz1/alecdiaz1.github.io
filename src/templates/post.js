@@ -3,15 +3,15 @@ import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { css } from '@emotion/core';
 import Img from 'gatsby-image';
-import Layout from '../components/layout';
 import ReadLink from '../components/read-link';
+import PostLayout from '../components/post-layout';
 
 export const query = graphql`
   query($slug: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        author
+        tag
         image {
           sharp: childImageSharp {
             fluid {
@@ -26,20 +26,13 @@ export const query = graphql`
 `;
 
 const PostTemplate = ({ data: { mdx: post } }) => (
-  <Layout>
-    <h1 css={css`
-      margin: 0 2rem 0rem 2rem;
-    `}>
+  <PostLayout>
+    <h1>
       {post.frontmatter.title}
     </h1>
-    <p
-      css={css`
-        font-size: .9rem;
-        margin: .5rem 2rem 2rem 2rem;
-      `}
-    >
+    <h4>
       {post.frontmatter.author}
-    </p>
+    </h4>
     <Img css={css`
       height: 35vh;
     `}
@@ -47,7 +40,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
     </Img>
     <MDXRenderer>{post.body}</MDXRenderer>
     <ReadLink to="/">&larr; back to all posts</ReadLink>
-  </Layout>
+  </PostLayout>
 );
 
 export default PostTemplate;

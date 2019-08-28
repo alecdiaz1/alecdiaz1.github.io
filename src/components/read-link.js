@@ -2,15 +2,15 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 
 const ReadLink = styled(Link)`
-  display: inline-block;
+  display: block;
   font-size: 0.875rem;
   text-decoration: none;
+  margin: 0 auto 0 2rem;
   color: white;
-  margin-left: 2rem;
   transition: .1s;
 
   :hover {
-    color: gray;
+    color: pink;
   }
 `;
 

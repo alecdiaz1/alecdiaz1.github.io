@@ -44,7 +44,7 @@ const PostPreview = ({ post }) => {
     <article>
       <InfoOverlay>
         <h3>{post.title}</h3>
-        <p>{post.excerpt}</p>
+        <p>{post.tag}</p>
         <p>read this post &rarr;</p>
       </InfoOverlay>
     </article>
