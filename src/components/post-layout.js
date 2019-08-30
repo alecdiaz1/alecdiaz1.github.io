@@ -25,9 +25,9 @@ const PostLayout = ({ children }) => {
 
           html,
           body {
-            background-color: #1f1f1f;
+            background-color: white;
             margin: 0;
-            color: white;
+            color: black;
             /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
                 Helvetica, Arial, sans-serif, 'Apple Color Emoji',
                 'Segoe UI Emoji', 'Segoe UI Symbol'; */
@@ -84,7 +84,7 @@ const PostLayout = ({ children }) => {
           }
 
           a {
-            color: white;
+            color: black;
             transition: 0.2s;
           }
 

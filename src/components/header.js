@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 
 const NavLink = styled(Link)`
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: 300;
   /* font-weight: ${props => props.fontWeight || 'normal'}; */
@@ -20,7 +20,7 @@ const NavLink = styled(Link)`
   }
 
   &.current-page {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
   }
 
   &:after {
@@ -32,7 +32,7 @@ const NavLink = styled(Link)`
     width: 0%;
     content: '.';
     color: transparent;
-    background: white;
+    background: black;
     height: 2px;
     transition: .2s;
   }
@@ -45,7 +45,7 @@ const NavLink = styled(Link)`
 const Header = () => (
   <header
     css={css`
-      background: #1F1F1F;
+      background: white;
       display: flex;
       justify-content: space-between;
       /* padding: 1rem calc((100vw - 900px - 0.5rem) / 2); */

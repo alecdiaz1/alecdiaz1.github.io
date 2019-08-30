@@ -13,7 +13,7 @@ const TextBox = styled('div')`
   margin-bottom: 4rem;
 
   h1 {
-    color: white;
+    color: black;
     font-size: 2.25rem;
     font-weight: 800;
     margin-bottom: 1rem;
@@ -21,7 +21,7 @@ const TextBox = styled('div')`
 
   p,
   a {
-    color: white;
+    color: black;
     font-size: 1.5rem;
     font-weight: 300;
     /* margin-top: rem; */
