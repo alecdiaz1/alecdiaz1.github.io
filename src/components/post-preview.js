@@ -2,58 +2,68 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
 const PostPreview = ({ post }) => {
-  const InfoOverlay = styled('div')`
+  const ItemContainer = styled('div')`
+    position: relative;
+    height: 20rem;
+    width: 50%;
+    /* margin-bottom: 1rem; */
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    &:hover div {
+      opacity: .9;
+    }
+  `
+
+  const Overlay = styled('div')`
+    background-color: gray;
+    width: 100%;
+    height: 100%;
     opacity: 0;
     transition: .2s;
 
-    h3 {
+    h2 {
       color: white;
+      padding-top: 2rem;
+      padding-bottom: .5rem;
+      padding-left: 2rem;
     }
-  `;
+
+    p {
+      color: white;
+      padding-left: 2rem;
+    }
+  `
 
   return (
-  <Link
-    css={css`
-      display: flex;
-      background-color: blue;
-      width: 50%;
-      height: 25rem;
-      padding: 2rem 2rem;
-      text-decoration: none;
-      color: white;
-      transition: .2s;
-
-      :first-of-type {
-        background-color: red;
-      }
-
-      :hover {
-        background-color: gray;
-      }
-
-      :hover div {
-        opacity: 100;
-      }
-
-      @media only screen and (max-width: 600px) {
-        width: 100%;
-        height: 20rem;
-      }
-    `}
-
-    to={post.slug}
-  >
-    <article>
-      <InfoOverlay>
-        <h3>{post.title}</h3>
-        <p>{post.tag}</p>
-        <p>read this post &rarr;</p>
-      </InfoOverlay>
-    </article>
-  </Link>
-  );
+    <ItemContainer>
+      <Link 
+      css={css`
+        text-decoration: none;
+      `}
+      to={post.slug}>
+        <Overlay>
+          <h2>{post.title}</h2>
+          <p>{post.tag}</p>
+        </Overlay>
+        <Img css={css`
+          /* position: absolute; */
+          top: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+        `} 
+        style={{position: "absolute"}}
+        fluid={post.image.sharp.fluid}/>
+      </Link>
+    </ItemContainer>
+  )
 };
 
 export default PostPreview;
