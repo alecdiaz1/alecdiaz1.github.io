@@ -6,7 +6,7 @@ const ReadLink = styled(Link)`
   font-size: 0.875rem;
   text-decoration: none;
   margin: 0 auto 0 2rem;
-  color: white;
+  color: black;
   transition: .1s;
 
   :hover {

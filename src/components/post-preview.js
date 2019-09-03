@@ -7,6 +7,10 @@ const PostPreview = ({ post }) => {
   const InfoOverlay = styled('div')`
     opacity: 0;
     transition: .2s;
+
+    h3 {
+      color: white;
+    }
   `;
 
   return (

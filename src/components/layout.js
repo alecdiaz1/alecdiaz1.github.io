@@ -26,9 +26,9 @@ const Layout = ({ children }) => {
 
           html,
           body {
-            background-color: #1f1f1f;
+            background-color: white;
             margin: 0;
-            color: white;
+            color: black;
             /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
               Helvetica, Arial, sans-serif, 'Apple Color Emoji',
               'Segoe UI Emoji', 'Segoe UI Symbol'; */
@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
           h4,
           h5,
           h6 {
-            color: white;
+            color: black;
             line-height: 1.1;
 
             + * {
@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
           }
 
           strong {
-            color: white;
+            color: black;
           }
 
           li {
