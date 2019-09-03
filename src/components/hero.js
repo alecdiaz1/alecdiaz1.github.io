@@ -4,24 +4,26 @@ import styled from '@emotion/styled';
 
 const TextBox = styled('div')`
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
-  height: 60vh;
+  height: 65vh;
   justify-content: center;
   align-items: center;
   /* padding: 0 calc((100vw - 550px) / 2) 2rem; */
-  width: 100%;
+  width: 80%;
   margin-bottom: 4rem;
 
   h1 {
-    color: black;
+    color: #515151;
     font-size: 2.25rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 
   p,
   a {
-    color: black;
+    text-align: center;
+    color: #515151;
     font-size: 1.5rem;
     font-weight: 300;
     /* margin-top: rem; */
@@ -33,9 +35,18 @@ const TextBox = styled('div')`
     font-size: 1.25rem;
   }
 
+  .highlight {
+    color: red;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
   .contact-container {
     display: flex;
     flex-direction: row;
+    margin-top: 1.5rem;
   }
 
   .contact {
@@ -48,7 +59,7 @@ const TextBox = styled('div')`
     transition: .2s;
 
     &:hover {
-      color: pink;
+      color: #3a98c3;
     }
   }
   
@@ -58,9 +69,8 @@ const Hero = () => {
   return (
     <TextBox>
       <h1>Alec Diaz</h1>
-      <p>HCI student at UC Irvine</p>
-      <p>Research assistant at HAI</p>
-      <p>UX/UI intern at Zynga</p>
+      <p>UX/UI designer + researcher</p>
+      {/* <p className={"subtitle"}>previously at: <a href="https://zynga.com" className={"highlight"}>Zynga</a></p> */}
       <div class="contact-container">
         <a class="contact" href="#">
           <svg id="i-clipboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">

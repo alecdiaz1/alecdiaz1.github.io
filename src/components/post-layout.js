@@ -67,7 +67,8 @@ const PostLayout = ({ children }) => {
           }
 
           p {
-            font-weight: 300;
+            font-weight: 500;
+            color: #515151;
             margin: 0.5rem 2rem 1rem 2rem;
           }
 
@@ -113,7 +114,7 @@ const PostLayout = ({ children }) => {
           }
 
           .about-link:hover {
-            color: pink;
+            color: #3a98c3;
           }
         `}
       />

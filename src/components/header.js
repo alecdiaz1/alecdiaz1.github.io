@@ -20,7 +20,7 @@ const NavLink = styled(Link)`
   }
 
   &.current-page {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #3a98c3;
   }
 
   &:after {
@@ -32,7 +32,7 @@ const NavLink = styled(Link)`
     width: 0%;
     content: '.';
     color: transparent;
-    background: black;
+    background: #3a98c3;
     height: 2px;
     transition: .2s;
   }
@@ -48,19 +48,12 @@ const Header = () => (
       background: white;
       display: flex;
       justify-content: space-between;
-      /* padding: 1rem calc((100vw - 900px - 0.5rem) / 2); */
       margin: 2rem auto;
       max-width: 900px;
 
       @media only screen and (max-width: 900px) {
         margin: 2rem 2rem;
       }
-    
-      /* @media only screen and (max-width: 430px) {
-        flex-direction: column;
-        align-items: center;
-        margin: 1rem;
-      } */
     `}
   >
     <NavLink to="/" fontWeight="bold" css={css`

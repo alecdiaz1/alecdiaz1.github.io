@@ -10,7 +10,7 @@ const ReadLink = styled(Link)`
   transition: .1s;
 
   :hover {
-    color: pink;
+    color: #3a98c3;
   }
 `;
 
