@@ -41,7 +41,11 @@ const TextBox = styled('div')`
   }
 
   .subtitle {
-    font-size: 1.25rem;
+    font-size: 1rem;
+
+    a {
+      font-size: 1rem;
+    }
   }
 
   .contact-container {
@@ -71,7 +75,7 @@ const Hero = () => {
     <TextBox>
       <h1>Alec Diaz</h1>
       <p>UX/UI designer + researcher</p>
-      {/* <p className={"subtitle"}>previously at: <a href="https://zynga.com" className={"highlight"}>Zynga</a></p> */}
+      <p className={"subtitle"}>previously at: <a href="https://zynga.com" className={"highlight"}>Zynga</a></p>
       <div class="contact-container">
         <a class="contact" href="#">
           <svg id="i-clipboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
