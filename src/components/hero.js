@@ -38,6 +38,11 @@ const TextBox = styled('div')`
 
   .highlight {
     color: red;
+    transition: .2s;
+
+    &:hover {
+      color: rgb(184, 29, 29);
+    }
   }
 
   .subtitle {
@@ -74,7 +79,7 @@ const Hero = () => {
   return (
     <TextBox>
       <h1>Alec Diaz</h1>
-      <p>UX/UI designer + researcher</p>
+      <p>ux designer + developer</p>
       <p className={"subtitle"}>previously at: <a href="https://zynga.com" className={"highlight"}>Zynga</a></p>
       <div class="contact-container">
         <a class="contact" href="#">

@@ -51,25 +51,45 @@ const PostLayout = ({ children }) => {
 
           h1 {
             margin: 0 4rem;
+
+            @media only screen and (max-width: 600px) {
+              margin: 0.5rem 2rem 0 2rem;
+            }
           }
 
           h2 {
             margin: 1.5rem 4rem 0 4rem;
+
+            @media only screen and (max-width: 600px) {
+              margin: 1.5rem 2rem 0 2rem;
+            }
           }
 
           h3 {
             margin: 1.5rem 4rem 0 4rem;
+
+            @media only screen and (max-width: 600px) {
+              margin: 0.5rem 2rem 0 2rem;
+            }
           }
 
           h4 {
             font-weight: 300;
             margin: 0 4rem 2rem 4rem;
+
+            @media only screen and (max-width: 600px) {
+              margin: 0.5rem 2rem 1rem 2rem;
+            }
           }
 
           p {
             font-weight: 500;
             color: #515151;
             margin: 0.5rem 4rem 1rem 4rem;
+
+            @media only screen and (max-width: 600px) {
+              margin: 0.5rem 2rem 1rem 2rem;
+            }
           }
 
           strong {
@@ -78,6 +98,10 @@ const PostLayout = ({ children }) => {
 
           li {
             margin-top: 0.25rem;
+
+            @media only screen and (max-width: 600px) {
+              margin-top: 0;
+            }
           }
 
           img {
@@ -111,6 +135,11 @@ const PostLayout = ({ children }) => {
           .summary {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: 700px) {
+              flex-direction: column;
+            }
           }
 
           .about-link:hover {
