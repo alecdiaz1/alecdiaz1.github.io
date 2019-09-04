@@ -34,7 +34,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
       {post.frontmatter.author}
     </h4>
     <Img css={css`
-      height: 35vh;
+      height: 50vh;
     `}
     fluid={post.frontmatter.image.sharp.fluid}>
     </Img>

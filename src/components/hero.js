@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 // import { Link, graphql, useStaticQuery } from 'gatsby';
 
 const TextBox = styled('div')`
@@ -16,7 +17,7 @@ const TextBox = styled('div')`
   h1 {
     color: #515151;
     font-size: 2.25rem;
-    font-weight: 800;
+    font-weight: 900;
     /* margin-bottom: 1rem; */
   }
 
@@ -79,7 +80,11 @@ const Hero = () => {
           resume
         </a>
         <a class="contact" href="#">
-          <svg id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <svg 
+          css={css`
+            margin-right: 5px;
+          `}
+          id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
           </svg>
           contact

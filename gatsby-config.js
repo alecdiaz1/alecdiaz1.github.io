@@ -34,5 +34,16 @@ module.exports = {
         plugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            variants: [`300`, `400`, `500`, `900`],
+          },
+        ],
+      },
+    }
   ],
 };

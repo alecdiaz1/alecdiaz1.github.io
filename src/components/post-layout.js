@@ -50,26 +50,26 @@ const PostLayout = ({ children }) => {
           }
 
           h1 {
-            margin: 0 2rem;
+            margin: 0 4rem;
           }
 
           h2 {
-            margin: 1.5rem 2rem 0 2rem;
+            margin: 1.5rem 4rem 0 4rem;
           }
 
           h3 {
-            margin: 1.5rem 2rem 0 2rem;
+            margin: 1.5rem 4rem 0 4rem;
           }
 
           h4 {
             font-weight: 300;
-            margin: 0 2rem 2rem 2rem;
+            margin: 0 4rem 2rem 4rem;
           }
 
           p {
             font-weight: 500;
             color: #515151;
-            margin: 0.5rem 2rem 1rem 2rem;
+            margin: 0.5rem 4rem 1rem 4rem;
           }
 
           strong {
