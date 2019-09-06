@@ -80,6 +80,7 @@ const PostLayout = ({ children }) => {
 
           h4 {
             font-weight: 300;
+            font-size: 1.2rem;
             margin: 0 4rem 2rem 4rem;
 
             @media only screen and (max-width: 600px) {

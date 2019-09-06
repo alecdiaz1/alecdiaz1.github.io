@@ -31,7 +31,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
       {post.frontmatter.title}
     </h1>
     <h4>
-      {post.frontmatter.author}
+      {post.frontmatter.tag}
     </h4>
     <Img css={css`
       height: 50vh;
