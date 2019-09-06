@@ -22,11 +22,16 @@ const PostLayout = ({ children }) => {
           /* * + * {
               margin-top: 1rem;
             } */
+            
+          html {
+            margin-left: calc(100vw - 100%);
+            margin-right: 0;
+          }
 
           html,
           body {
             background-color: white;
-            margin: 0;
+            /* margin: 0; */
             color: black;
             /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
                 Helvetica, Arial, sans-serif, 'Apple Color Emoji',
@@ -84,6 +89,7 @@ const PostLayout = ({ children }) => {
 
           p {
             font-weight: 500;
+            line-height: 1.5; 
             color: #515151;
             margin: 0.5rem 4rem 1rem 4rem;
 
