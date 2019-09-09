@@ -22,7 +22,7 @@ const PostLayout = ({ children }) => {
           /* * + * {
               margin-top: 1rem;
             } */
-            
+
           html {
             margin-left: calc(100vw - 100%);
             margin-right: 0;
@@ -90,9 +90,9 @@ const PostLayout = ({ children }) => {
 
           p {
             font-weight: 500;
-            line-height: 1.5; 
+            line-height: 1.5;
             color: #515151;
-            margin: 0.5rem 4rem 1rem 4rem;
+            margin: 0.5rem 4rem 3rem 4rem;
 
             @media only screen and (max-width: 600px) {
               margin: 0.5rem 2rem 1rem 2rem;
@@ -146,6 +146,16 @@ const PostLayout = ({ children }) => {
 
             @media only screen and (max-width: 700px) {
               flex-direction: column;
+              margin-bottom: 0rem;
+            }
+
+            & > div > p {
+              font-weight: 300;
+              color: white;
+            }
+
+            > div {
+              height: 5rem;
             }
           }
 
