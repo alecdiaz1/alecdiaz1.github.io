@@ -40,7 +40,7 @@ const Hero = styled('div')`
     transform: translate(-50%, -50%);
 
     @media only screen and (max-width: 400px) {
-      top: 90%
+      top: 90%;
     }
   }
 

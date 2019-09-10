@@ -116,7 +116,7 @@ const PostLayout = ({ children }) => {
           }
 
           a {
-            color: black;
+            color: #515151;
             transition: 0.2s;
           }
 

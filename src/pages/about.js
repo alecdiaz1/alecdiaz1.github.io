@@ -20,17 +20,11 @@ const ListStyle = styled('ul')`
 const About = () => (
   <PostLayout>
     <h1>Hello!</h1>
-    <h4>A little about me -</h4>
+    <h4>A little about me &mdash;</h4>
     <p>image here</p>
     <p>
       I'm a designer fascinated by the intersection of technology and human
       behavior.
-    </p>
-    <p>
-      Want to chat? You can reach me at{' '}
-      <a class="about-link" href="mailto:alecdiaz1@yahoo.com">
-        alecdiaz1@yahoo.com
-      </a>
     </p>
     <p>
       In my free time, I like <br />
@@ -45,6 +39,13 @@ const About = () => (
         </li>
       </ListStyle>
     </p>
+    <p>
+      Want to chat? You can reach me at{' '}
+      <a class="about-link" href="mailto:alecdiaz1@yahoo.com">
+        alecdiaz1@yahoo.com
+      </a>
+    </p>
+  
     <ReadLink to="/">&larr; back to home</ReadLink>
   </PostLayout>
 );

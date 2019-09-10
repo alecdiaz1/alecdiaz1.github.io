@@ -56,11 +56,15 @@ const Header = () => (
       }
     `}
   >
-    <NavLink to="/" fontWeight="bold" css={css`
-      :hover:after {
-        width: 0%;
-      }
-    `}>
+    <NavLink
+      to="/"
+      fontWeight="bold"
+      css={css`
+        :hover:after {
+          width: 0%;
+        }
+      `}
+    >
       Logo
     </NavLink>
     <nav
