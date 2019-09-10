@@ -142,7 +142,7 @@ const PostLayout = ({ children }) => {
           .summary {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 2rem;
+            margin: 1rem 0;
 
             @media only screen and (max-width: 700px) {
               flex-direction: column;
