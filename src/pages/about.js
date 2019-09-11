@@ -17,6 +17,12 @@ const ListStyle = styled('ul')`
   }
 `;
 
+const AboutLink = styled('a')`
+  &:hover {
+    color: #3a98c3;
+  }
+`;
+
 const About = () => (
   <PostLayout>
     <h1>Hello!</h1>
@@ -29,7 +35,11 @@ const About = () => (
     <p>
       In my free time, I like <br />
       <ListStyle>
-        <li>making <a class="about-link" href="https://soundcloud.com/thealegator">music</a>
+        <li>
+          making{' '}
+          <AboutLink href="https://soundcloud.com/thealegator">
+            music
+          </AboutLink>
         </li>
         <li> dancing</li>
         <li> playing video games (League of Legends, Rocket League)</li>
@@ -41,11 +51,11 @@ const About = () => (
     </p>
     <p>
       Want to chat? You can reach me at{' '}
-      <a class="about-link" href="mailto:alecdiaz1@yahoo.com">
+      <AboutLink href="mailto:alecdiaz1@yahoo.com">
         alecdiaz1@yahoo.com
-      </a>
+      </AboutLink>
     </p>
-  
+
     <ReadLink to="/">&larr; back to home</ReadLink>
   </PostLayout>
 );

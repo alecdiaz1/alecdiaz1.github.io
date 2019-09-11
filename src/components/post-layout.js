@@ -138,30 +138,6 @@ const PostLayout = ({ children }) => {
               margin-bottom: 1rem;
             }
           }
-
-          .summary {
-            display: flex;
-            justify-content: space-between;
-            margin: 1rem 0;
-
-            @media only screen and (max-width: 700px) {
-              flex-direction: column;
-              margin-bottom: 0rem;
-            }
-
-            & > div > p {
-              font-weight: 300;
-              color: white;
-            }
-
-            > div {
-              height: 5rem;
-            }
-          }
-
-          .about-link:hover {
-            color: #3a98c3;
-          }
         `}
       />
       <Helmet>

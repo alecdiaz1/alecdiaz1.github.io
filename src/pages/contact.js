@@ -55,7 +55,6 @@ const TextInputBox = styled('textarea')`
   &:focus {
     border: 2px solid #555;
   }
-  
 `;
 
 const SubmitButton = styled('button')`
@@ -63,11 +62,11 @@ const SubmitButton = styled('button')`
   font-size: 18px;
   background: white;
   border: 2px solid #515151;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 25%;
   margin: 0 auto;
   border-radius: 50rem;
-  transition: .15s;
+  transition: 0.15s;
 
   &:hover {
     background: #3a98c3;
@@ -93,7 +92,9 @@ const Contact = () => (
       <TextInput type="text"></TextInput>
       <h3>Message</h3>
       <TextInputBox type="text"></TextInputBox>
-      <SubmitButton type="submit" value="submit" form="contact">Submit</SubmitButton>
+      <SubmitButton type="submit" value="submit" form="contact">
+        Submit
+      </SubmitButton>
     </FormGroup>
 
     <ReadLink to="/">&larr; back to home</ReadLink>

@@ -92,12 +92,32 @@ const TitleBox = styled('div')`
     margin-bottom: 0;
 
     @media only screen and (max-width: 600px) {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
     }
   }
 
   @media only screen and (max-width: 600px) {
     top: calc(100vh / 9);
+  }
+`;
+
+const SummaryBox = styled('div')`
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+
+  @media only screen and (max-width: 700px) {
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+
+  & > div > p {
+    font-weight: 300;
+    color: white;
+  }
+
+  > div {
+    height: 5rem;
   }
 `;
 
@@ -107,7 +127,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
       <TitleBox>
         <h1>{post.frontmatter.title}</h1>
         <h4>{post.frontmatter.tag}</h4>
-        <div class="summary">
+        <SummaryBox>
           <div>
             <h3>Role</h3>
             <p>UX/UI Designer</p>
@@ -120,7 +140,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
             <h3>Timeline</h3>
             <p>Sep. 2018 - Oct. 2018</p>
           </div>
-        </div>
+        </SummaryBox>
       </TitleBox>
       <Img
         css={css`
