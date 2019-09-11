@@ -124,7 +124,7 @@ const PostTemplate = ({ data: { mdx: post } }) => (
       </TitleBox>
       <Img
         css={css`
-          height: 90vh;
+          height: 88vh;
           margin-left: -50vw;
           left: 50%;
           width: 98.7vw;
