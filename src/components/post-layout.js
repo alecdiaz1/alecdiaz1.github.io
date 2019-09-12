@@ -124,6 +124,7 @@ const PostLayout = ({ children }) => {
             display: flex;
             width: 100%;
             margin-bottom: 2rem;
+            pointer-events: none;
 
             @media only screen and (max-width: 600px) {
               flex-direction: column;
