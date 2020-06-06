@@ -22,11 +22,6 @@ export default () => {
     <>
       <Layout>
         <Hero/>
-          <ItemContainer>
-            {posts.map(post => (
-              <PostPreview key={post.slug} post={post} />
-            ))}
-          </ItemContainer>
       </Layout>
     </>
   );

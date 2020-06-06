@@ -84,7 +84,6 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <Header />
       <main
         css={css`
           display: flex;
@@ -97,7 +96,6 @@ const Layout = ({ children }) => {
           {children}
         </Fade>
       </main>
-      <Footer />
     </>
   );
 };

@@ -9,7 +9,7 @@ const TextBox = styled('div')`
   flex-direction: column;
   height: 65vh;
   justify-content: center;
-  align-items: center;
+  //align-items: center;
   /* padding: 0 calc((100vw - 550px) / 2) 2rem; */
   width: 80%;
   margin-bottom: 4rem;
@@ -23,25 +23,25 @@ const TextBox = styled('div')`
 
   p,
   a {
-    text-align: center;
     color: #515151;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
     /* margin-top: rem; */
   }
 
-  a {
+  h2, a {
     margin: 1rem auto 0 0;
     text-decoration: none;
     font-size: 1.25rem;
+    font-weight: 900;
   }
 
   .highlight {
-    color: red;
+    color: #0073ff;
     transition: .2s;
 
     &:hover {
-      color: rgb(184, 29, 29);
+      color: rgb(35,111,205);
     }
   }
 
@@ -80,25 +80,7 @@ const Hero = () => {
     <TextBox>
       <h1>Alec Diaz</h1>
       <p>ux designer + developer</p>
-      <p className={"subtitle"}>previously at: <a href="https://zynga.com" className={"highlight"}>Zynga</a></p>
-      <div class="contact-container">
-        <a class="contact" href="#">
-          <svg id="i-clipboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
-          </svg>
-          resume
-        </a>
-        <a class="contact" href="#">
-          <svg 
-          css={css`
-            margin-right: 5px;
-          `}
-          id="i-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
-          </svg>
-          contact
-        </a>
-      </div>
+      <h2>My website has moved to <a className={"highlight"} href="https://alecdiaz.dev">alecdiaz.dev</a></h2>
     </TextBox>
   );
 };
